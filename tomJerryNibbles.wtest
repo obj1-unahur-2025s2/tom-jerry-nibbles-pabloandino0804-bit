@@ -17,4 +17,29 @@ describe "Casos de uso: Parte 1" {
     assert.equals(14, tom.velocidadMaxima())
   }
 
+  test "Si come a Nibbles, pasa a tener de velocidad máxima 18.7 (su energía es 137)"{
+    tom.comerUnRaton(jerry)
+    tom.correr(24)
+    tom.comerUnRaton(nibbles)
+    assert.equals(18.7, tom.velocidadMaxima())
+  }
+
+  test "Si jerry cumple años (3 años de edad), y luego Tom lo vuelve a comer, pasaría a tener 25.9 (su energia es 209)" {
+    tom.comerUnRaton(jerry)
+    tom.correr(24)
+    tom.comerUnRaton(nibbles)
+    jerry.cumplirAnios()
+    tom.comerUnRaton(jerry)
+    assert.equals(25.9, tom.velocidadMaxima())
+  }
+
+  test "si corre 38 metros su velocidad pasa a ser 24 (su energia es 190)"{
+    tom.comerUnRaton(jerry)
+    tom.correr(24)
+    tom.comerUnRaton(nibbles)
+    jerry.cumplirAnios()
+    tom.comerUnRaton(jerry)
+    tom.correr(38)
+    assert.equals(24, tom.velocidadMaxima())
+  }
 }
