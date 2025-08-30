@@ -7,12 +7,14 @@ describe "Casos de uso: Parte 1" {
   }
 
   test "Si come a Jerry, la velocidad pasa a ser 15.2 (su energia es 102)" {
-    tom.comer(jerry)
+    tom.comerUnRaton(jerry)
     assert.equals(15.2, tom.velocidadMaxima())
   }
 
-  test "test 4" {
-    assert.notThat(false)
+  test "Si corre 24 metros, entonces su velocidad maxima pasa a ser 14 (su energia es 90)" {
+    tom.comerUnRaton(jerry)
+    tom.correr(24)
+    assert.equals(14, tom.velocidadMaxima())
   }
 
 }
