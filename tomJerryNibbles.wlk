@@ -67,4 +67,14 @@ object perez {
         return 10 + cantidadDeDientes*2
     }
 }
+
 // Inventar otro ratón
+object chizzy{
+    method peso(){
+        return 45
+    }
+
+    method velocidadMaxima() {
+        return 16.7
+    }
+}
