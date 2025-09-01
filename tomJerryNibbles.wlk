@@ -8,9 +8,7 @@ object tom {
         energia = energia - metros / 2
     }
 
-    method velocidadMaxima() {
-        return 5 + energia / 10
-    }
+    method velocidadMaxima() = 5 + energia / 10
 
     method puedeCazar(distancia) {
         return energia - distancia / 2 >= 0
@@ -29,27 +27,20 @@ object tom {
 object jerry {
     var edad = 2
 
-    method peso() {
-        return edad * 20
-    }
+    method peso() = edad * 20
 
     method cumplirAnios(){
         edad = edad + 1
     }
 
-    method velocidadMaxima() {
-        return 15.2
-    }
+    method velocidadMaxima() = 15.2
+    
 }
 
 object nibbles {
-    method peso() {
-        return 35
-    }
+    method peso() = 35
 
-    method velocidadMaxima() {
-        return 18.7
-    }
+    method velocidadMaxima() = 18.7
 }
 
 object perez {
@@ -63,18 +54,12 @@ object perez {
         cantidadDeDientes = 0
     }
 
-    method peso() {
-        return 10 + cantidadDeDientes*2
-    }
+    method peso() = 10 + cantidadDeDientes*2
 }
 
 // Inventar otro ratón
 object chizzy{
-    method peso(){
-        return 45
-    }
+    method peso() = 45
 
-    method velocidadMaxima() {
-        return 16.7
-    }
+    method velocidadMaxima() = 16.7
 }
